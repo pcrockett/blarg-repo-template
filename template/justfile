@@ -20,3 +20,7 @@ update-blarg:
         >bin/blarg.tmp
     @chmod +x bin/blarg.tmp
     @mv bin/blarg.tmp bin/blarg
+
+# Update this repo from its copier template
+update-template:
+    copier update --skip-answered
